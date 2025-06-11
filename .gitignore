@@ -1,0 +1,20 @@
+# 編譯產物與環境
+__pycache__/
+*.pyc
+.venv/
+.idea/
+
+# 模型與輸出
+checkpoints/
+weights/
+output/
+*.h5
+*.pth
+*.ckpt
+
+# 暫存資料
+*.log
+*.txt~
+
+# 視需要排除的資料
+loss_data.txt
