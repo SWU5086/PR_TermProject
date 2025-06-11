@@ -1,16 +1,36 @@
 # PR_TermProject
 
-YOLOv3
-為了避免檔案太大，訓練跟測試的圖片檔要自己加入
-測試集：001496~002991.png
-訓練集：000000~001495.png，002992~007480.png
-----------------------------------------
-Object Dectection Metrics設定如下
-Annotation:轉換過的labels
-images:放測試圖的資料夾
-*class:kitti.names的內容，副檔名改.txt
-Dections annotation:output_txts(由test_for_metric產生)
-*class:kitti.names的內容，副檔名改.txt
+## YOLOv3
 
-資料夾評估結果是Object Dectection Metrics的輸出
-=======================
+由於 GitHub 對檔案大小有限制，**訓練與測試的圖片檔需自行加入**。
+
+### 📁 資料集分配如下：
+- 測試集：`001496.png ~ 002991.png`
+- 訓練集：
+  - `000000.png ~ 001495.png`
+  - `002992.png ~ 007480.png`
+
+---
+
+## 📊 Object Detection Metrics 設定
+
+請依以下說明進行測試與評估：
+
+- **Annotation**：使用**轉換後的 YOLO 格式 labels**
+- **Images**：放置**測試圖檔**的資料夾
+- **\*class 檔案**：使用 `kitti.names` 的內容，但**副檔名需改為 `.txt`**
+
+### 偵測結果格式（由 `test_for_metric.py` 產生）：
+
+- **Detection Annotation**：`output_txts` 資料夾
+- 同樣需提供一份 `*.txt` 的 **class 名稱檔案**（來自 `kitti.names`）
+
+---
+
+## 📂 評估輸出
+
+執行 Object Detection Metrics 工具後，會產生完整的評估資料夾，包含：
+
+- 每類別的 Precision / Recall / AP
+- mAP（mean Average Precision）
+- 可視化結果（如提供）
