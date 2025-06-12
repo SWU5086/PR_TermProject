@@ -12,9 +12,34 @@
 
 ---
 
-## 📊 Object Detection Metrics 設定
+# 📊 Object Detection Metrics 使用教學
+## Object Detection Metrics 環境架設
 
-請依以下說明進行測試與評估：
+1. 從老師給的網址下載 zip 檔  
+   [https://github.com/rafaelpadilla/review_object_detection_metrics](https://github.com/rafaelpadilla/review_object_detection_metrics)
+
+2. 解壓縮下載的 zip 檔
+
+3. 點進解壓後的資料夾，直到看到 `environment.yml` 檔案
+
+4. 在該資料夾空白處右鍵，選擇「打開終端機」（這樣終端機的路徑會直接在此資料夾）  
+   > **注意**：如果你直接在外層開終端機，要自己用 `cd` 指令切換到此資料夾路徑
+
+5. 執行以下指令創建 conda 環境並安裝依賴：
+   ```bash
+   conda create -n object_detection_metrics python=3.9
+   conda activate object_detection_metrics
+   conda env update --file environment.yml
+   python setup.py install
+   python run.py 
+
+    #跑完上述架好環境後，下次要用來評估模型只需要到該資料夾，右鍵開啟終端機，輸入
+    conda activate object_detection_metrics
+    python run.py
+    ```
+
+
+##Object Detection Metrics 使用教學
 
 - **Annotation**：使用**轉換後的 YOLO 格式 labels**
 - **Images**：放置**測試圖檔**的資料夾
