@@ -20,10 +20,10 @@
 - **Images**：放置**測試圖檔**的資料夾
 - **\*class 檔案**：使用 `kitti.names` 的內容，但**副檔名需改為 `.txt`**
 
-### 偵測結果格式（由 `test_for_metric.py` 產生）：
+### 偵測結果格式：
 
-- **Detection Annotation**：`output_txts` 資料夾
-- 同樣需提供一份 `*.txt` 的 **class 名稱檔案**（來自 `kitti.names`）
+- **Detection Annotation**：`output_txts` 資料夾（由 `test_for_metric.py` 產生）
+- **class 名稱檔案**：同上需`*.txt` （來自 `kitti.names`）
 
 ---
 
