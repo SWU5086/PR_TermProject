@@ -39,7 +39,7 @@
     ```
 
 
-##Object Detection Metrics 使用教學
+##Object Detection Metrics 設定
 
 - **Annotation**：使用**轉換後的 YOLO 格式 labels**
 - **Images**：放置**測試圖檔**的資料夾
