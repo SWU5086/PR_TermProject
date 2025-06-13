@@ -41,8 +41,8 @@
 
 ## Object Detection Metrics 設定
 
-- **Annotation**：使用**轉換後的 YOLO 格式 labels**
-- **Images**：放置**測試圖檔**的資料夾
+- **Annotation**：使用**轉換後的 test labels**
+- **Images**：放置**test images**的資料夾
 - **\*class 檔案**：使用 `kitti.names` 的內容，但**副檔名需改為 `.txt`**
 
 ### 偵測結果格式：
